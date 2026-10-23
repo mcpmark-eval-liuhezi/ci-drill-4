@@ -1,0 +1,14 @@
+name: CI Drill
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  drill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sentinel step
+        run: |
+          echo "DRILL-FAIL-BY-DESIGN"
+          exit 1
